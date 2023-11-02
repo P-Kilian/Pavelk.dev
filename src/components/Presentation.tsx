@@ -10,7 +10,7 @@ const Presentation = () => {
         <p>
           Junior web developer with 1 year experience focused on front-end.
           Highly adaptable and able to work independently to deliver
-          high-quality results that meet clients' needs and exceed their
+          high-quality results that meet clients needs and exceed their
           expectations. Proficient in HTML, CSS (SCSS), JavaScript and React.
           Skilled in optimizing websites for SEO and improving user engagement.
           Strong collaboration and problem-solving abilities.
