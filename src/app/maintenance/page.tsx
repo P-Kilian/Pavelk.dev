@@ -1,10 +1,5 @@
-import Head from "next/head";
-
 const MaintenancePage = () => (
   <>
-    <Head>
-      <title>Site Under Maintenance</title>
-    </Head>
     <div className="bg-gray-900 min-h-screen flex flex-col justify-center items-center">
       <div className="container mx-auto p-4 bg-gray-800 shadow-lg rounded-lg text-white text-center">
         <h1 className="text-4xl font-semibold text-gray-100 mb-4">

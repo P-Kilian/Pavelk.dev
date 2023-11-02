@@ -4,6 +4,11 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Pavel Kilian",
+  description: "A front-end developer from Bruxelles, Belgium.",
+};
+
 export default function RootLayout({
   children,
 }: {
