@@ -17,9 +17,7 @@ const Socials: React.FC<SocialsProps> = ({ links }) => {
           href={links[social]}
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <img src={`/${social}.svg`} alt={social} />
-        </a>
+        />
       ))}
     </div>
   );
