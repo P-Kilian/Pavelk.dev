@@ -1,4 +1,4 @@
 export function isMaintenanceMode() {
-  const MaintenanceMode = true;
+  const MaintenanceMode = false;
   return MaintenanceMode;
 }

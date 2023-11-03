@@ -1,24 +1,15 @@
+import Link from "next/link";
 import React from "react";
 
-interface SocialsProps {
-  links: {
-    [key: string]: string;
-  };
-}
-
-const Socials: React.FC<SocialsProps> = ({ links }) => {
-  const socials = Object.keys(links);
-
+const Socials = () => {
   return (
     <div>
-      {socials.map((social) => (
-        <a
-          key={social}
-          href={links[social]}
-          target="_blank"
-          rel="noopener noreferrer"
-        />
-      ))}
+      <ul className="flex gap-5">
+        <Link href={"#"}>Link 1</Link>
+        <Link href={"#"}>Link 2</Link>
+        <Link href={"#"}>Link 3 </Link>
+        <Link href={"#"}>Link 4</Link>
+      </ul>
     </div>
   );
 };

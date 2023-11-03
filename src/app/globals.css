@@ -4,23 +4,30 @@
 
 @layer base {
   :root {
-    --text: #061912;
-    --background: #f7fdfb;
-    --primary: #2aacc0;
-    --secondary: #f8dde8;
-    --accent: #d34b36;
+    --text: #090816;
+    --background: #e3e1f4;
+    --primary: #241f56;
+    --secondary: #c3bfe8;
+    --accent: #433aa1;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .dark {
-    --text: #e6f9f2;
-    --background: #020806;
-    --primary: #3fc1d5;
-    --secondary: #210711;
-    --accent: #c9412c;
+    --text: #e9e9f7;
+    --background: #0d0b1e;
+    --primary: #ada9e0;
+    --secondary: #1b1740;
+    --accent: #665ec5;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
 body {
-  color: rgb(var(--text));
-  background: rgb(var(--background));
+  color: var(--text);
+  background: var(--background);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.container-rounded {
+  @apply bg-secondary rounded-xl p-5;
 }

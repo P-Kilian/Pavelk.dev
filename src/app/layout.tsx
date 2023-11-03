@@ -4,6 +4,11 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Pavel Kilian",
+  description: "A front-end developer from Bruxelles, Belgium.",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -11,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="px-[400px]">{children}</div>
+      </body>
     </html>
   );
 }

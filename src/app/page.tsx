@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
@@ -6,32 +7,24 @@ import IssTracker from "../components/IssTracker";
 import Presentation from "../components/Presentation";
 import Socials from "../components/Socials";
 import { isMaintenanceMode } from "../utils/utils";
-import MaintenancePage from "@/app/maintenance/page";
+import MaintenancePage from "./maintenance/page";
 
 export default function Home() {
   if (isMaintenanceMode()) {
     return <MaintenancePage />;
   }
 
-  const fakeLinks = {
-    Facebook: "http://www.fakefacebook.com",
-    Twitter: "http://www.faketwitter.com",
-    Instagram: "http://www.fakeinstagram.com",
-    LinkedIn: "http://www.fakelinkedin.com",
-    YouTube: "http://www.fakeyoutube.com",
-  };
-
   return (
-    <main className="mx-auto w-max-[800px]">
-      <Link href="/maintenance">This will send you to Maintenance page</Link>
+    <main className="h-screen pt-5">
       <Header />
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row gap-5 py-[40px]">
         <Presentation />
         <IssTracker />
       </div>
       <AboutMe />
-      <Socials links={fakeLinks} />
+      <Socials />
       <Footer />
+      <Link href="/maintenance">This will send you to Maintenance page</Link>
     </main>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="bg-green-500">
+    <div className="container-rounded">
       <div>
         <h2>Bio</h2>
         <ul>
@@ -12,7 +12,7 @@ const AboutMe = () => {
       </div>
       <div>
         <h2>Interests</h2>
-        <ul>
+        <ul className="flex flex-row gap-5">
           <li>Programming</li>
           <li>Reading</li>
           <li>Hiking</li>
