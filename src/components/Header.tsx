@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ThemeToggle from "./ThemeToggle";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex flex-row gap-2">
           <h1 className="text-text">Pavel Kilian</h1>
         </div>
-        <ThemeToggle />
+        <ThemeSwitch />
       </div>
     </header>
   );

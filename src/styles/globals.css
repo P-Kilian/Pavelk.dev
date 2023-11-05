@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  [data-theme='light'] {
     --text: #090816;
     --background: #e3e1f4;
     --primary: #241f56;
@@ -12,7 +12,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  .dark {
+  [data-theme='dark'] {
     --text: #e9e9f7;
     --background: #0d0b1e;
     --primary: #ada9e0;
